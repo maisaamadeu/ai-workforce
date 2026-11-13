@@ -1,0 +1,21 @@
+{
+  "name": "ai-workforce",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @ai-workforce/server & npm run dev --workspace @ai-workforce/web",
+    "dev:server": "npm run dev --workspace @ai-workforce/server",
+    "dev:web": "npm run dev --workspace @ai-workforce/web",
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/authorization/tsconfig.json --noEmit && tsc -p apps/server/tsconfig.json --noEmit && tsc -p apps/web/tsconfig.json --noEmit",
+    "build": "npm run build --workspace @ai-workforce/web && npm run build --workspace @ai-workforce/server"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

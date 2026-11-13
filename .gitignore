@@ -1,0 +1,17 @@
+.fvm/flutter_sdk
+.fvm/versions
+.dart_tool/
+build/
+
+node_modules/
+dist/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+.env
+.DS_Store
+coverage/
+.vite/
+apps/web/dist/
+apps/server/dist/

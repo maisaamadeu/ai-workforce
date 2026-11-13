@@ -1,0 +1,16 @@
+name: workforce_system_macos
+description: Keychain e supervisor POSIX do AI Workforce.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  ffi: ^2.1.4
+  workforce_core:
+    path: ../workforce_core
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.26.0
